@@ -119,3 +119,12 @@ Some additional functions can be found in the linked documentation.
 
 [📢 Bad joke alert]
 Because you want to pass the subject and get your degree, right?
+
+### I started the Gazebo, but simulator window did not pop up
+
+Re-open the folder locally and give additional permissions for Docker:
+``` bash
+xhost +local:docker
+```
+
+Re-open the folder in the container and check that it is now working correctly.
