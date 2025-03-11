@@ -1,0 +1,3 @@
+[submodule "evs_gz_utils"]
+	path = evs_gz_utils
+	url = https://github.com/vision-agh/evs_gz_utils.git
