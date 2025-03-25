@@ -75,6 +75,15 @@ It should prints some data that is constantly read from the CrazyFlie in the sim
 
 Yup, as you can see, no ROS is needed to control the CrazyFlie inside CrazySim.
 However, one of your goals is to integrate CrazySim with the ROS infrastructure to facilitate further integration with other robotics software.
+Before using ROS for the first time, setup the environment with the following command:
+``` bash
+cd /root/ros2_ws
+source ./setup.sh <id>
+```
+As the `<id>` argument you need to provide the `ROS_DOMAIN_ID` (integer in the range 0-101, both inclusive).
+If you are working in the lab, this value must be **original**, just for you.
+This way you will only see your ROS topics and will not interfere with the topics of your colleagues.
+
 Remember that before using ROS and after significant changes made in the workspace, you need to build the entire workspace.
 To do so, just envoke the [build.sh](.devcontainer/build.sh) script, which is located inside `/root/ros2_ws` directory:
 ``` bash
